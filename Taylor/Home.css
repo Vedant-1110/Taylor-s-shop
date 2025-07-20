@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Navbar {
+    position:fixed;
+    z-index:3;
+    height: 60px;
+    width: 100%;
+    border-bottom: solid rgb(153, 153, 153) 2px;
+}
+
+#nav-1 {
+    height: 100%;
+    width: 100%;
+    background-color: #265596;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#nav-left,
+#nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#nav-left-1,
+#nav-right-1 {
+    display: flex;
+    gap: 17px;
+}
+
+#nav-left-1 a,
+#nav-right-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    height: 60px;
+    padding: 0 10px;
+    transition: all 0.3s ease-in;
+}
+
+#nav-left-1 a:hover,
+#nav-right-1 a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Header Sections */
+header{
+    
+    background-color: aquamarine;
+    margin-top: 0px;
+    height: 900px;
+}
+#header-1 {
+    
+    background-image: url(Elderly\ Tailor\ at\ Work\ 2.png);
+    background-position:center;
+    background-size:cover;
+
+    height: 900px;
+    background-color: aqua;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:125px;
+    padding-bottom: 125px;
+    align-items: center;
+
+}
+
+#header-2 {
+    position:relative;
+    height: 200px;
+    width:500px;
+    background: rgba(14, 14, 14, 0); /* transparent white */
+    padding: 20px;
+    color:aliceblue;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in 0.1s;
+   
+}
+#header-2 h1{
+     transition: all ease-in-out 0.5s;
+}
+
+
+ 
+  .carousel-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+    overflow: hidden; /* hide scrollbar */
+    border: 1px solid #ccc;
+  }
+
+  .carousel {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+  }
+
+  .carousel img {
+    width: 400px;
+    height: 350px;
+    margin-right: 10px;
+    border-radius: 8px;
+    flex-shrink: 0; /* prevent shrinking */
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+/*------------ABOUT PAGE--------------*/
+
+
+  .about-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #fdfaf6;
+}
+
+.about-card {
+  max-width: 1400px;
+  background: #fffefb;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.about-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.about-box {
+  flex: 1 1 300px;
+  background-color: #faf5ef;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #d4a373;
+}
+
+.about-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-box ul {
+  padding-left: 20px;
+}
+
+.about-box li {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  list-style: disc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-card {
+    padding: 25px;
+  }
+
+  .about-boxes {
+    flex-direction: column;
+  }
+
+  .about-card h1 {
+    font-size: 2rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.1rem;
+  }
+}
+/*service page*/
+.services-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #f0f7ff 0%, #fffefb 100%);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.services-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2a4e74; /* Deep Blue */
+}
+
+.services-section .subtitle {
+  font-size: 1.1rem;
+  color: #4d7ca5;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-left: 5px solid #4d94d4; /* Light Blue highlight */
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.quote-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4d94d4; /* Blue Button */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover {
+  background-color: #3b7ab8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .services-section {
+    padding: 30px 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section h1 {
+    font-size: 2rem;
+  }
+
+  .services-section .subtitle {
+    font-size: 1rem;
+  }
+}
+/* order page*/
+.booking-section {
+  max-width: 800px;
+  margin:auto;
+  padding-top: 60px;
+  padding: 30px;
+  background: #f0f8ff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.booking-section h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 2rem;
+  color: #2a4e74;
+  margin-bottom: 30px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.booking-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.radio-group label {
+  font-weight: normal;
+}
+
+.booking-form button {
+  padding: 12px 25px;
+  background-color: #4d94d4;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #3b7ab8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .booking-section {
+    padding: 20px;
+  }
+}
